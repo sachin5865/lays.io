@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="./images/logo.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">contact</a></li>
+                    <li><a href="">portfoloio</a></li>
+                
+                </ul>
+            </nav>
+            <i class="las la-bars" onclick="togglemenu()"></i>
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 V2 Dualshock 4</h2>
+                <h3>Wireless Controller for PlayStation</h3>
+                <P>(Compatible/Generic)</P>
+                <h4>$32.50</h4>
+                <button type="button">Buy Now<i class="las la-long-arrow-alt-right "></i></button>
+
+            </div>
+            <div class="col-2">
+                <img src="./images/cutting.png" class="control">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <i class="las la-cart-plus "></i>
+                    <p><small>Add to cart</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="lab la-facebook "></i>
+            <i class="lab la-instagram "></i>
+            <i class="lab la-twitter "></i>
+        </div>
+
+    </div>
+
+    <script>
+
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+
+            if(menuList.style.maxHeight == "0px")
+
+            {
+                menuList.style.maxHeight = "130px";
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px";
+            }
+            
+        }
+    </script>
+
+</body>
+
+</html>
